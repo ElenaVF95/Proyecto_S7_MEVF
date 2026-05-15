@@ -26,6 +26,8 @@ if boton_disp:
 
     st.write('Este gráfico de dispersión muestra la relación entre el odómetro y el precio de los autos en venta')
 
-    dispersion = px.scatter(df_cars, x='odometer', y='price')
+    dispersion = px.scatter(df_cars, x='odometer', y='price',
+                            title= 'Relación Odómetro vs Precio', labels= {'odometer': 'Lectura odómetro', 'price': 'Precio'}, color_discrete_sequence=['mediumpurple']
+    ))
 
     st.plotly_chart(dispersion)
