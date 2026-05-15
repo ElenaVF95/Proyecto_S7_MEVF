@@ -15,7 +15,7 @@ if boton_hist:
     grafico = px.histogram(
         df_cars, 
         x='odometer',
-        title= 'Distribución de kilometraje (Odómetro)', labels= {'odometer': 'Lectura odómetro'}, color_discrete_sequence=['lilac']
+        title= 'Distribución de kilometraje (Odómetro)', labels= {'odometer': 'Lectura odómetro'}, color_discrete_sequence=['mediumpurple']
     )
 
     st.plotly_chart(grafico)
