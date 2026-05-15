@@ -12,7 +12,15 @@ if boton_hist:
 
     st.write('Este histograma muestra la distribución del kilometraje de los autos en venta')
 
-    grafico = px.histogram(df_cars, x='odometer')
+    grafico = px.histogram(
+        df_cars, 
+        x='odometer',
+        title= 'Distribución de kilometraje (Odómetro),
+        labels={
+            'odometer': 'Lectura odómetro',
+            'price': 'Precio'},
+        color_discrete_sequence=['purple']
+    )
 
     st.plotly_chart(grafico)
 
