@@ -28,6 +28,6 @@ if boton_disp:
 
     dispersion = px.scatter(df_cars, x='odometer', y='price',
                             title= 'Relación Odómetro vs Precio', labels= {'odometer': 'Lectura odómetro', 'price': 'Precio'}, color_discrete_sequence=['mediumpurple']
-    ))
+    )
 
     st.plotly_chart(dispersion)
