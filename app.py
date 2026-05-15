@@ -2,16 +2,26 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-df=pd.read_csv('datos/vehicles_us.csv')
+df_cars=pd.read_csv('datos/vehicles_us.csv')
 
-st.header('¡Mi primer producto de datos!')
+st.header('Registro de autos publicados para su venta')
 
-boton = st.checkbox('Mostrar histograma')
+boton_hist = st.checkbox('Mostrar histograma')
 
-if boton:
+if boton_hist:
 
-    st.write('Este histograma muestra la distribución del kilometraje de autos en venta')
+    st.write('Este histograma muestra la distribución del kilometraje de los autos en venta')
 
-    grafico = px.histogram(df, x='odometer')
+    grafico = px.histogram(df_cars, x='odometer')
 
     st.plotly_chart(grafico)
+
+boton_disp = st.checkbox('Mostrar gráfico de dispersión')
+
+if boton_disp:
+
+    st.write('Este gráfico de dispersión muestra la relación entre el odómetro y el precio de los autos en venta')
+
+    dispersion = px.scatter(df_cars, x='odometer', y='price')
+
+    st.plotly_chart(dispersion)
