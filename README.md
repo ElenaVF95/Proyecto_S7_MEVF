@@ -1,2 +1,3 @@
 # Proyecto_S7_MEVF
-Proyecto Sprint 7 - Página web para evaluar un conjunto de datos de anuncios de coches.
+Proyecto Sprint 7 - Página web para evaluar un conjunto de datos de anuncios de coches. En el siguiente link de encuentran dos gráficos, un grafico de dispersión de los datos del odómetro de cada vehículo puesto a la venta y un grafico de correlación entre el precio y el odómetro de dichos vehículos, para visualizar cada uno se debe marcar la casilla correspondiente.
+Link a la página web: https://proyecto-s7-mevf.onrender.com
